@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header, section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+
+header {  
+  height: 120px;  
+  background-color: #ffffff;
+}
+
+p {
+  font-size: 24px;
+}
+
+.logo {  
+  font-weight: bold;
+  color: #CA2D2D;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 32px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header a {  
+  color: #000;
+}
+
+header a:hover {
+  color: #CA2D2D;  
+}
+
+.hero, #about {  
+  height: 714px;  
+}
+
+.hero div, #about div {
+  width: 45%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero p {
+  margin: 32px auto 48px;
+  padding-right: 15%;
+}
+
+button {
+  width: 220px;
+  height: 64px;
+  border-radius: 10px;
+}
+
+button a {
+  display: block;
+}
+
+.hero button,.text button{
+  background-color: #CA2D2D;  
+  border: none;  
+}
+
+.hero button:hover,.text button:hover {
+  background-color: #ffffff;  
+  border: 2px solid #CA2D2D;
+}
+
+.hero a,.text a {  
+  width: 100%;
+  color: #ffffff;
+}
+
+.hero button:hover a,.text button:hover a{
+  color: #CA2D2D;
+}
+
+#about {
+  background-color: #FAEAEA; 
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#about p {
+  padding-right: 7%;
+}
+
+#portfolio {
+  height: 773px;
+  background-color: #ffffff;
+}
+
+.text {
+  width: 30%;
+}
+
+.img-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+
+.img-box img {
+  width: 311px;
+  height: 243px;
+  border-radius: 10px;
+  box-shadow: (0px 3px 4px rgba(0, 0, 0, 0.25));
+  object-fit: contain;
+}
+
+.img-box button {
+  background-color: #ffffff;
+  border: 2px solid #CA2D2D;
+  display: block;
+}
+
+.img-box button a {
+  color: #CA2D2D;  
+}
+
+.img-box button:hover {
+  background-color: #CA2D2D;
+  border: none;
+}
+
+.img-box button:hover a {
+  color: #ffffff;
+}
+
+.img-box p {
+  font-weight: 500;
+}
