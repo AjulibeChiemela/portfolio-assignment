@@ -15,6 +15,11 @@ header, section {
   padding: 0 4%;
 }
 
+.contact-header {
+  justify-content: flex-end;
+  margin-bottom: 2%;
+}
+
 header {  
   height: 120px;  
   background-color: #ffffff;
@@ -59,7 +64,8 @@ header a:hover {
   height: 714px;  
 }
 
-.hero div, #about div {
+.hero div, #about div,
+.contact-section div {
   width: 45%;
 }
 
@@ -68,12 +74,18 @@ h1 {
   font-weight: bolder;
 }
 
+.contact-h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
 .hero p {
   margin: 32px auto 48px;
   padding-right: 15%;
 }
 
-button {
+button,.submit-btn {
   width: 220px;
   height: 64px;
   border-radius: 10px;
@@ -85,12 +97,12 @@ button a {
   padding-top: 10%;  
 }
 
-.hero button,.text button{
+.hero button,.text button,.submit-btn {
   background-color: #CA2D2D;  
   border: none;  
 }
 
-.hero button:hover,.text button:hover {
+.hero button:hover,.text button:hover,.submit-btn:hover {
   background-color: #ffffff;  
   border: 2px solid #CA2D2D;
 }
@@ -100,7 +112,12 @@ button a {
   color: #ffffff;
 }
 
-.hero button:hover a,.text button:hover a{
+.submit-btn {
+  color: #ffffff;
+  margin-left: 20%;
+}
+
+.hero button:hover a,.text button:hover a,.submit-btn:hover {
   color: #CA2D2D;
 }
 
@@ -151,22 +168,25 @@ h2 {
 }
 
 .img-box button {
-  margin: 7% auto 0;
-  background-color: #ffffff;
-  border: 2px solid #CA2D2D;
+  margin: 7% auto 0;  
   display: block;
 }
 
-.img-box button a {
+.img-box button,.contact-header button { 
+  background-color: #ffffff;
+  border: 2px solid #CA2D2D;  
+}
+
+.img-box button a,.contact-header button a {
   color: #CA2D2D;  
 }
 
-.img-box button:hover {
+.img-box button:hover,.contact-header button:hover {
   background-color: #CA2D2D;
   border: none;
 }
 
-.img-box button:hover a {
+.img-box button:hover a,.contact-header button:hover a {
   color: #ffffff;
 }
 
@@ -175,3 +195,26 @@ h2 {
   margin: 13% auto;
 }
 
+input[type=text], input[type=email], textarea {
+  display: block;
+  width: 519px;
+  height: 54px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  padding-left: 2%;
+  margin: 5% 0;
+}
+
+textarea {
+  height: 162px;
+  resize: none;
+  overflow-y: auto;
+  font-family: inherit;
+  padding-top: 2%;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #CA2D2D;
+  outline: none;
+}
