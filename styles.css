@@ -200,7 +200,7 @@ h2 {
   margin: 13% auto;
 }
 
-input[type=text], input[type=email], textarea {
+input[type="text"], input[type="email"], textarea {
   display: block;
   width: 519px;
   height: 54px;
